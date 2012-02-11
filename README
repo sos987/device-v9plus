@@ -1,0 +1,13 @@
+Build this source how-to:
+1) Get cyanogenmod sources:
+      repo init -u git://github.com/CyanogenMod/android.git -b gingerbread
+      repo sync
+2) Copy sources to *source_home*/device/zte/v9plus
+3) Initialize build environment:
+      source build/envsetup.sh
+      lunch full_v9plus-eng
+4) Build sources:
+      source build/tools/device/makerecoveries.sh full_v9plus-eng
+5) Get your recovery.img from *source_home*/out/target/product/v9plus/ 
+
+Full guide (Porting Clockwork Recovery to New Devices): http://www.koushikdutta.com/2010/10/porting-clockwork-recovery-to-new.html
