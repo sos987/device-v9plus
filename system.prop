@@ -1,0 +1,120 @@
+#
+# system.prop for v9plus
+#
+##########################################
+#History:
+#when       who         what, where, why
+#--------   ----        ---------------------------------------------------
+#...
+##########################################
+ro.secure=0
+ro.allow.mock.location=0
+ro.debuggable=1
+persist.service.adb.enable=1
+ro.setupwizard.mode=DISABLED
+ro.product.board_name=v9plus
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+debug.egl.hw=1
+debug.sf.hw=1
+dalvik.vm.heapsize=48m
+ro.dev.dmm=1
+dev.dmm.dpd.trigger_delay=30
+ro.sf.lcd_density=240
+ro.sf.hwrotation=270
+#
+# system props for the cne module
+#
+# modify the data config wangcheng_ril_20110120
+persist.cne.UseCne=false
+persist.cne.loadVendorCne=true
+persist.cne.bat.range.low.med=30
+persist.cne.bat.range.med.high=60
+persist.cne.loc.policy.op=/system/etc/OperatorPolicy.xml
+persist.cne.loc.policy.user=/system/etc/UserPolicy.xml
+persist.cne.bwbased.rat.sel=true
+persist.cne.snsr.based.rat.mgt=true
+persist.cne.bat.based.rat.mgt=true
+persist.cne.rat.acq.time.out=30000
+persist.cne.rat.acq.retry.tout=0
+
+#
+# ZTE_AUDIO_YXS_20111201 Disable LPA Decode on V9 Platform
+#lpa.decode=true
+ro.hdmi.enable=true
+
+#
+# system props for the data modules
+#
+# lllccc open the netmgrd, 2011.02.28
+ro.use_data_netmgrd=true
+
+#
+# system props for SD card emulation of emmc partition
+#
+ro.emmc.sdcard.partition=16
+
+#
+# system props for telephony modules
+#
+#device supports EHRPD
+# wangcheng_ril_20110120 remove ro.config.ehrpd=true
+
+#
+# system props for the MM modules
+#
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=false
+media.stagefright.enable-scan=false
+media.stagefright.enable-http=true
+
+#
+# system prop for opengles version
+#
+ro.opengles.version=131072
+
+#
+# system prop for Bluetooth Dialup Networking
+#
+ro.qualcomm.bluetooth.dun=true
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+ro.build.baseband_version=V9PLUSB01
+ro.build.software_version=MEGAFON_V9PLUSV1.0.0B03
+ro.build.sw_internal_version=MEGAFON_V9PLUSV1.0.0B03
+ro.config.ringtone=BeatPlucker.ogg
+ro.config.notification_sound=F1_New_SMS.ogg
+persist.sys.timezone=Asia/Dubai
+ro.com.google.clientidbase=android-zte
+ro.com.google.clientidbase.yt=android-zte
+ro.com.google.clientidbase.am=android-zte
+ro.com.google.clientidbase.ms=android-zte
+ro.com.google.clientidbase.gmm=android-zte
+ro.config.notification_sound=OnTheHunt.ogg
+ro.config.alarm_alert=Alarm_Classic.ogg
+ro.setupwizard.mode=OPTIONAL
+ro.com.google.gmsversion=2.3_r9
+usb.default.pid=0x1354
+persist.usb.default.pid=0x1354
+ro.build.baseband_version=V9PLUSB01
+ro.build.software_version=V9PLUSV1.0.0B16
+ro.build.sw_internal_version=V9PLUSV1.0.0B16
+ro.camera.video.size.mms=307200
+ro.camera.video.duaration.mms=20
+ro.camera.sound.forced=1
+ro.camera.video.cust.qua=noset
+net.bt.name=Android
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
